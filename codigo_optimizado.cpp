@@ -27,17 +27,17 @@ public:
     }
 };
 
-// Función principal
-int main() {
-    int opcion;
-    int contador = 1;
-    double totalPrecio = 0.0;
-    
-    Producto productoActual;
-    Producto productoCaro;
-    
-    cout << "\nProducto más caro: " << productoCaro.getNombre() << " - Precio: " << productoCaro.getPrecio() << endl;
-    cout << "Total de precios: " << totalPrecio << endl;
 
-    return 0;
+void ingresarProducto(Producto &producto) {
+    string nombre;
+    double precio;
+    
+    cout << "\nIngresa el nombre del producto: ";
+    cin >> nombre;
+    producto.setNombre(nombre);
+    
+    cout << "Ingresa el precio del producto: ";
+    cin >> precio;
+    producto.setPrecio(precio);
 }
+
