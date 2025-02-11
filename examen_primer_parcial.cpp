@@ -24,6 +24,7 @@ public:
     }
 };
 
+
     int main() {
     int opcion;
     int contador = 1;
@@ -52,3 +53,18 @@ public:
         productoActual.setPrecio(precio);
 
         totalPrecio += productoActual.getPrecio();
+
+int main() {
+
+    Producto productoActual;
+    Producto productoCaro;
+    
+    productoActual.setPrecio(50.0);
+    productoCaro.setPrecio(100.0);
+
+    double totalPrecio = productoActual.getPrecio() + productoCaro.getPrecio();
+
+    cout << "\nEl total de precios de todos los productos es: " << totalPrecio << endl;
+    return 0;
+}
+
