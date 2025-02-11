@@ -1,53 +1,60 @@
-# 📌 Gestión de Productos
+# 📌 Proyecto de Gestión de Productos en C++
 
-## 📖 Descripción
-Este proyecto en C++ tiene como objetivo gestionar productos ingresados por el usuario, permitiendo capturar su información, determinar cuál es el más costoso y calcular el total de los precios ingresados. 
+## 🚀 Descripción
+Este proyecto es una aplicación en C++ diseñada para gestionar productos de manera eficiente. Permite ingresar productos con información detallada, almacenarlos en una estructura organizada y determinar cuál es el más costoso y cuál es el más económico. Además, el sistema calcula el total de los precios ingresados y muestra un listado completo de todos los productos registrados.
 
-El programa interactúa con el usuario a través de la consola, donde solicita el nombre y el precio de cada producto, los compara para encontrar el más caro y, finalmente, muestra los resultados de manera clara y estructurada.
+Con una interfaz sencilla pero efectiva en consola, este programa es ideal para quienes desean practicar la manipulación de objetos en C++ y la gestión de estructuras de datos básicas como arreglos.
 
-## 🎯 Objetivo
-El propósito de este programa es practicar y reforzar conocimientos sobre:
-- Manejo de clases y objetos en C++.
-- Entrada y salida de datos mediante `cin` y `cout`.
-- Uso de estructuras de control como ciclos y condicionales.
-- Implementación de funciones para modularizar el código y mejorar su legibilidad.
+---
 
-## 🚀 Funcionamiento
-El programa sigue la siguiente lógica:
-1. Se solicita al usuario que ingrese el nombre y precio de un producto.
-2. Se almacena la información y se compara el precio del producto actual con el más alto registrado hasta el momento.
-3. Se acumula el precio de cada producto ingresado para calcular el total.
-4. El usuario puede decidir si desea ingresar otro producto o finalizar la captura.
-5. Al terminar, se muestra el producto más caro junto con el total de los precios ingresados.
+## 🎯 Características Principales
+✅ **Ingreso de Productos**: Permite ingresar productos con los siguientes atributos:
+   - 📌 Nombre
+   - 📌 Categoría
+   - 📌 Precio (Validado para aceptar solo valores positivos)
 
-## 🛠️ Estructura del Código
-El código está organizado de la siguiente manera:
+✅ **Almacenamiento Eficiente**: 
+   - Capacidad para guardar hasta **100 productos** en un arreglo.
+   - Manejo optimizado de la memoria mediante clases y funciones específicas.
 
-- **Clase `Producto`**
-  - Contiene los atributos `nombre` y `precio`.
-  - Implementa métodos `set` y `get` para acceder y modificar estos atributos.
+✅ **Análisis de Datos**: 
+   - Identificación y visualización del **producto más caro** y el **producto más barato**.
+   - Cálculo del **total de precios de todos los productos registrados**.
 
-- **Función `ingresarProducto`**
-  - Solicita al usuario que ingrese el nombre y precio de un producto.
-  - Usa los métodos `set` de la clase `Producto` para almacenar la información.
+✅ **Visualización Clara de los Datos**:
+   - Muestra la lista completa de productos registrados en formato legible.
+   - Presenta la información de manera organizada y comprensible para el usuario.
 
-- **Función `determinarProductoMasCaro`**
-  - Compara cada producto ingresado con el producto más caro registrado.
-  - Actualiza la información si se encuentra un producto con mayor precio.
+✅ **Interfaz de Usuario en Consola**:
+   - Interacción amigable mediante preguntas y respuestas en terminal.
+   - Validaciones integradas para prevenir errores en la entrada de datos.
 
-- **Función `mostrarResultados`**
-  - Muestra en pantalla el producto más caro ingresado y su precio.
-  - Imprime el total acumulado de los precios de todos los productos.
+---
 
-- **Función `main`**
-  - Coordina la ejecución del programa.
-  - Controla el flujo de ingreso de datos mediante un bucle `do-while`.
-  - Llama a las funciones correspondientes para capturar datos, procesarlos y mostrar resultados.
+## 🛠️ Funcionamiento
+1️⃣ **Ingreso de Datos**
+   - Se solicita al usuario que ingrese los datos del producto: nombre, categoría y precio.
+   - Se verifica que el precio sea un número válido y positivo.
 
-## 📌 Requisitos Previos
-Para compilar y ejecutar este programa, necesitas:
-- Un compilador de C++.
-- Un editor de código o IDE como Visual Studio Code, Visual Studio Community o cualquier otro de tu preferencia.
+2️⃣ **Almacenamiento de Productos**
+   - Los productos ingresados se almacenan en un arreglo.
+   - Se permite seguir agregando productos hasta un máximo de 100.
+
+3️⃣ **Análisis de Productos**
+   - Se determina el producto más caro y el más barato en base al precio ingresado.
+
+4️⃣ **Resultados Finales**
+   - Se muestra la lista de todos los productos almacenados.
+   - Se presentan el producto más costoso y el más económico con sus respectivos detalles.
+   - Se calcula y despliega el total de los precios acumulados.
+
+5️⃣ **Finalización**
+   - El usuario decide si quiere agregar más productos o terminar el programa.
+
+---
+
+
+📣 ¡Esperamos que este proyecto te ayude a mejorar tus habilidades en C++! 🚀
 
 
 
