@@ -25,7 +25,7 @@ public:
 };
 
 
-    int main() {
+int main() {
     int opcion;
     int contador = 1;
     double totalPrecio = 0.0;
@@ -54,17 +54,25 @@ public:
 
         totalPrecio += productoActual.getPrecio();
 
-int main() {
+        // Determinar producto más caro
+        if (contador == 1 || productoActual.getPrecio() > productoCaro.getPrecio()) {
+            productoCaro = productoActual;
+        }
 
-    Producto productoActual;
-    Producto productoCaro;
+        contador++;
+
+        cout << "\n¿Quieres agregar otro producto? 1.Si 2.No: ";
+        cin >> opcion;
+    } while (opcion == 1);
+
     
-    productoActual.setPrecio(50.0);
-    productoCaro.setPrecio(100.0);
-
-    double totalPrecio = productoActual.getPrecio() + productoCaro.getPrecio();
 
     cout << "\nEl total de precios de todos los productos es: " << totalPrecio << endl;
+
+    cout << "\nEl producto más caro es:\n";
+    cout << "Nombre: " << productoCaro.getNombre() << endl;
+    cout << "Precio: " << productoCaro.getPrecio()<<endl;
+
     return 0;
 }
 

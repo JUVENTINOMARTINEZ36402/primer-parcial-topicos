@@ -27,6 +27,7 @@ public:
     }
 };
 
+
 void ingresarProducto(Producto &producto) {
     string nombre;
     double precio;
@@ -39,3 +40,4 @@ void ingresarProducto(Producto &producto) {
     cin >> precio;
     producto.setPrecio(precio);
 }
+
