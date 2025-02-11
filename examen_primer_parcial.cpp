@@ -68,6 +68,11 @@ int main() {
     
 
     cout << "\nEl total de precios de todos los productos es: " << totalPrecio << endl;
+
+    cout << "\nEl producto más caro es:\n";
+    cout << "Nombre: " << productoCaro.getNombre() << endl;
+    cout << "Precio: " << productoCaro.getPrecio()<<endl;
+
     return 0;
 }
 
