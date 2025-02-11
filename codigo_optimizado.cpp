@@ -41,3 +41,9 @@ void ingresarProducto(Producto &producto) {
     producto.setPrecio(precio);
 }
 
+// Función para determinar el producto más caro
+void determinarProductoMasCaro(Producto &productoActual, Producto &productoCaro, int contador) {
+    if (contador == 1 || productoActual.getPrecio() > productoCaro.getPrecio()) {
+        productoCaro = productoActual;
+    }
+}
