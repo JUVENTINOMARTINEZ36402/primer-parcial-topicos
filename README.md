@@ -46,18 +46,10 @@ El código está organizado de la siguiente manera:
 
 ## 📌 Requisitos Previos
 Para compilar y ejecutar este programa, necesitas:
-- Un compilador de C++ como `g++` (incluido en MinGW para Windows o en paquetes estándar para Linux y macOS).
-- Un editor de código o IDE como Visual Studio Code, Dev-C++, Code::Blocks o cualquier otro de tu preferencia.
+- Un compilador de C++.
+- Un editor de código o IDE como Visual Studio Code, Visual Studio Community o cualquier otro de tu preferencia.
 
-## 📌 Cómo Ejecutarlo
-1. Compilar el código en un entorno compatible con C++:
-   ```sh
-   g++ -o productos main.cpp
-   ```
-2. Ejecutar el programa:
-   ```sh
-   ./productos
-   ```
+
 
 ## 👥 Autores
 Este proyecto fue desarrollado por:
