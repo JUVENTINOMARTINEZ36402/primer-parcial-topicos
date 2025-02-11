@@ -47,3 +47,35 @@ void determinarProductoMasCaro(Producto &productoActual, Producto &productoCaro,
         productoCaro = productoActual;
     }
 }
+
+// Función para mostrar resultados
+void mostrarResultados(Producto &productoCaro, double totalPrecio) {
+    cout << "\nEl producto más caro es:\n";
+    cout << "Nombre: " << productoCaro.getNombre() << endl;
+    cout << "Precio: " << productoCaro.getPrecio() << endl;
+    cout << "\nEl total de precios de todos los productos es: " << totalPrecio << endl;
+}
+
+// Función principal
+int main() {
+    int opcion;
+    int contador = 1;
+    double totalPrecio = 0.0;
+    
+    Producto productoActual;
+    Producto productoCaro;
+    
+    do {
+        cout << "\nProducto " << contador << endl;
+        ingresarProducto(productoActual);
+        totalPrecio += productoActual.getPrecio();
+        determinarProductoMasCaro(productoActual, productoCaro, contador);
+        
+        contador++;
+        cout << "\n¿Quieres agregar otro producto? 1.Si 2.No: ";
+        cin >> opcion;
+    } while (opcion == 1);
+    
+    mostrarResultados(productoCaro, totalPrecio);
+    return 0;
+}
