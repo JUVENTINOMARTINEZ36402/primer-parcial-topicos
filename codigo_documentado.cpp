@@ -1,7 +1,7 @@
 /**
  * @version 1.0
  * @date 10/02/2025
- * @author Angie
+ * @author Juventino, Angie, Alejandro, Karla
  * @title Gestión de Productos
  * @brief Programa para gestionar productos, determinar el más caro y calcular el total de precios.
  */
